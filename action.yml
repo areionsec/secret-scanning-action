@@ -17,7 +17,7 @@ inputs:
 runs:
   using: 'composite'
   steps:
-    - uses: docker://public.ecr.aws/g5i0b9w7/secret-scanning-action:0.0.5
+    - uses: docker://public.ecr.aws/g5i0b9w7/secret-scanning-action:0.0.7
       with:
         webhook_url: ${{inputs.webhook_url}}
         timeout_seconds: ${{inputs.timeout_seconds}}
